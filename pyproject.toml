@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lookatme"
+version = "2.5.1"
+description = "An interactive, command-line presentation tool"
+authors = [{ name = "James Johnson", email = "d0c.s4vage@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "marshmallow>=3.17.0,<4",
+    "Click>=7,<9",
+    "PyYAML>=6,<7",
+    "mistune>=0.8,<1",
+    "urwid>=2,<3",
+    "Pygments>=2,<3",
+]
+classifiers = [
+    "Environment :: Console",
+    "Environment :: Plugins",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Multimedia :: Graphics :: Presentation",
+    "Topic :: Software Development :: Documentation",
+]
+
+[project.scripts]
+lookatme = "lookatme.__main__:main"
+lam = "lookatme.__main__:main"
+witnessme = "lookatme.__main__:main"
